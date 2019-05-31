@@ -2,7 +2,6 @@
 
 myjx uninstall --context='kubernetes-admin@kubernetes'
 cd /opt/cicd/pv
-rm -rf data*
 kubectl delete pv mydemo-pv     
 kubectl delete pv mydemo-pv-01  
 kubectl delete pv mydemo-pv-02  
@@ -11,6 +10,7 @@ kubectl delete pv mydemo-pv-04
 kubectl delete pv mydemo-pv-05  
 kubectl delete pv mydemo-pv-06  
 kubectl delete pv mydemo-pv-07  
+rm -rf data*
 mkdir data  data1  data2  data3  data4  data5  data6  data7  data8  data-all  datae4
 chmod 777 data*
 kubectl apply -f  pv-1.json
