@@ -1,0 +1,22 @@
+
+{
+        "kind": "PersistentVolume",
+        "apiVersion": "v1",
+        "metadata": {
+                "name": "mydemo-pv-01",
+                "labels": {
+                        "type": "local-dalong"
+                }
+        },
+        "spec": {
+                "capacity": {
+                        "storage": "100Gi"
+                },
+                "accessModes": [
+                        "ReadWriteOnce"
+                ],
+                "hostPath": {
+                        "path": "/opt/cicd/pv/data1"
+                }
+        }
+}
