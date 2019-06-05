@@ -1,0 +1,18 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+127.0.0.1 k8s
+10.106.61.186 nexus
+10.101.247.224 jenkins.jx.192.168.1.105.nip.io
+10.101.247.224 deck.jx.192.168.1.105.nip.io
+10.101.247.224 hook.jx.192.168.1.105.nip.io
+10.101.247.224 jenkins.jx.192.168.1.105.nip.io
+10.101.247.224 chartmuseum.jx.192.168.1.105.nip.io
+10.101.247.224 docker-registry.jx.192.168.1.105.nip.io
+10.101.247.224 monocular.jx.192.168.1.105.nip.io
+10.101.247.224 monocular.jx.192.168.1.105.nip.io
+10.101.247.224 jx-jx-app-jenkins.jx.192.168.1.105.nip.io
+10.101.247.224 nexus.jx.192.168.1.105.nip.io
+10.101.247.224 tide.jx.192.168.1.105.nip.io
+192.168.1.228 chartmuseum.jenkins-x.io
+10.109.79.35 jenkins-x-chartmuseum
+10.109.79.35 my.chartmuseum.jx.192.168.1.105.nip.io
