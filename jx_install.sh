@@ -13,14 +13,14 @@ kubectl delete pv mydemo-pv-07
 rm -rf data*
 mkdir /home/cicd/pv/data  /home/cicd/pv/data1  /home/cicd/pv/data2  /home/cicd/pv/data3  /home/cicd/pv/data4  /home/cicd/pv/data5  /home/cicd/pv/data6  /home/cicd/pv/data7  /home/cicd/pv/data8  /home/cicd/pv/data-all  /home/cicd/pv/datae4
 chmod 777 /home/cicd/pv/data*
-kubectl apply -f  pv-1.json
-kubectl apply -f  pv-2.json
-kubectl apply -f  pv-3.json
-kubectl apply -f  pv-4.yaml
-kubectl apply -f  pv-5.yaml
-kubectl apply -f  pv-6.yaml
-kubectl apply -f  pv-7.yaml
-kubectl apply -f  pv.yaml
+kubectl apply -f  /home/cicd/jx-shell/pv-1.json
+kubectl apply -f  /home/cicd/jx-shell/pv-2.json
+kubectl apply -f  /home/cicd/jx-shell/pv-3.json
+kubectl apply -f  /home/cicd/jx-shell/pv-4.yaml
+kubectl apply -f  /home/cicd/jx-shell/pv-5.yaml
+kubectl apply -f  /home/cicd/jx-shell/pv-6.yaml
+kubectl apply -f  /home/cicd/jx-shell/pv-7.yaml
+kubectl apply -f  /home/cicd/jx-shell/pv.yaml
 unset http_proxy
 unset https_proxy
 myjx install --provider=kubernetes  --on-premise --default-admin-password='123456' \
