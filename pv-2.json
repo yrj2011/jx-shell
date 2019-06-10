@@ -16,7 +16,7 @@
                         "ReadWriteOnce"
                 ],
                 "hostPath": {
-                        "path": "/opt/cicd/pv/data2"
+                        "path": "/home/cicd/pv/data2"
                 }
         }
 }
