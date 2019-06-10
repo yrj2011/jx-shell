@@ -10,7 +10,7 @@ kubectl delete pv mydemo-pv-04
 kubectl delete pv mydemo-pv-05  
 kubectl delete pv mydemo-pv-06  
 kubectl delete pv mydemo-pv-07  
-rm -rf data*
+rm -rf /home/cicd/pv/data*
 mkdir /home/cicd/pv/data  /home/cicd/pv/data1  /home/cicd/pv/data2  /home/cicd/pv/data3  /home/cicd/pv/data4  /home/cicd/pv/data5  /home/cicd/pv/data6  /home/cicd/pv/data7  /home/cicd/pv/data8  /home/cicd/pv/data-all  /home/cicd/pv/datae4
 chmod 777 /home/cicd/pv/data*
 kubectl apply -f  /home/cicd/jx-shell/pv-1.json
