@@ -1,7 +1,7 @@
 #! /bin/bash
 
 myjx uninstall --context='kubernetes-admin@kubernetes'
-cd /opt/cicd/pv
+cd /home/cicd/pv
 kubectl delete pv mydemo-pv     
 kubectl delete pv mydemo-pv-01  
 kubectl delete pv mydemo-pv-02  
@@ -23,7 +23,6 @@ kubectl apply -f  pv-7.yaml
 kubectl apply -f  pv.yaml
 unset http_proxy
 unset https_proxy
-PATH=/opt/cicd/sh/git/git:$PATH
 myjx install --provider=kubernetes  --on-premise --default-admin-password='123456' \
 --cloud-environment-repo http://192.168.1.228:1080/jenkins-x/cloud-environments.git \
 --versions-repo http://192.168.1.228:1080/jenkins-x/jenkins-x-versions.git \
